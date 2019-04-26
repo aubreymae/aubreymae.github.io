@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css?family=Heebo:100,300,400,500|Open+Sans:300,300i,400,400i,600,600i');
+
+/*******
+****    Aubrey Garcia's Digital Designer and Illustrator Portfolio
+****    Created on April 19, 2019
+****
+****
+***/
+
+/*** 
+****    GENERAL
+****/
+
+html, body
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 1.1em;
+}
+
+a
+{
+    text-decoration: none;
+    color: black;
+}
+
+/*** 
+****    HEADER
+****/
+
+#header
+{
+    position: relative;
+    padding: 35px 500px 35px 35px;
+    z-index: 3;
+    box-shadow: 0px 2px 5px 1px #cccccc;
+}
+
+#header-contents
+{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 35px 70px 35px;
+    text-align: left;
+    /* background-color: blue; */
+    border-left: 0.5px solid black;
+}
+
+#header-full-name
+{
+    font-family: 'Heebo', Arial, sans-serif;
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+#header-desc
+{
+    font-family: 'Heebo', Arial, sans-serif;
+    font-size: 1em;
+    font-weight: 100;
+}
+
+/*** 
+****    SIDEBAR
+****/
+
+#sidebar-fluid
+{
+    position: absolute;
+    width: 200px;
+    height: 100%;
+    padding: 35px 35px 35px 35px;
+    z-index: 2;
+    box-shadow: 2px 2px 5px 1px #cccccc;
+    cursor: pointer;
+}
+
+#sidebar-fixed
+{
+    position: fixed;
+    display: none;
+    width: 200px;
+    height: 100%;
+    margin-top: -300px;
+    padding: 35px 35px 35px 35px;
+    z-index: 2;
+    box-shadow: 2px 2px 5px 1px #cccccc;
+}
+
+#sidebar-contents
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0px 200px 35px 35px;
+    text-align: left;
+    /* background-color: blue; */
+    border-left: 0.5px solid black;
+}
+
+#menu-links a
+{
+    flex-basis: 50%;
+    font-family: 'Heebo', Arial, sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    text-decoration: none;
+    color: black;
+}
+
+#menu-links a:hover
+{
+    cursor: pointer;
+}
+
+/*** 
+****    BODY
+****/
+
+#body-contents-container
+{
+    margin: 70px 70px 70px 340px;
+}
+
+.project-container
+{
+    margin-bottom: 70px;
+}
+
+.project-container > * /* Apply to each of the parent's children */
+{
+    margin-bottom: 17.5px;
+}
+
+.proj-image-contain img
+{
+    width: 100%;
+}
+
+.proj-title-contain
+{
+    font-family: 'Heebo', Arial, sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.proj-made-with-contain
+{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: 300;
+    /* background-color: red; */
+}
+
+.proj-made-with-contain p
+{
+    padding: 0;
+    margin: 0;
+    margin-right: 10px;
+    font-size: 0.9em;
+    /* background-color: blue; */
+}
+
+.proj-made-with-contain > *
+{
+    margin-right: 5px;
+}
+
+.proj-tags-contain
+{
+    padding: 3px 10px 3px 10px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    font-size: 0.8em;
+    color: white;
+}
+
+/*** TAGS ***/
+.proj-tags-mobile
+{
+    background-color: #005FFF;
+}
+
+.proj-tags-inst
+{
+    background-color: #D54ECE;
+}
+
+.proj-tags-ux
+{
+    background-color: #CFD549;
+}
+
+.proj-tags-research
+{
+    background-color: #49D58F;
+}
+
+.proj-tags-web
+{
+    background-color: #D52527;
+}
+
+/*** END TAGS ***/
+
+.proj-desc-contain
+{
+    font-size: 0.8em;
+}
+
+.read-more-contain
+{
+    font-family: 'Heebo', Arial, sans-serif;
+    font-size: 0.9em;
+    font-weight: 600;
+}
+
+/* Contents */
+
+.page-title
+{
+    font-weight: 600;
+    /* background-color: blue; */
+}
+
+.page-body
+{
+    font-weight: 300;
+}
+
+.grid-container
+{
+    margin-bottom: 35px;
+}
+
+.grid-row
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.grid-row > *
+{
+    margin-right: 35px;
+}
+
+.gallery-container
+{
+    margin-bottom: 35px;
+}
+
+.gallery-row
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    align-content: center;
+}
+
+.gallery-col-1, .gallery-col-2, .gallery-col-3, .gallery-col-4
+{
+    max-width: 300px;
+    height: 100%;
+    object-fit: fill;
+}
+
+.youtube-video
+{
+    margin-bottom: 35px;
+}
+
+.gallery-row > *
+{
+    margin-right: 17px;
+}
+
+/*** 
+****    MEDIA QUERIES
+****/
+
+@media only screen and (max-width: 1200px)
+{
+    /*** 
+    ****    HEADER
+    ****/
+
+    #header
+    {
+        padding: 35px 50px 35px 35px;
+    }
+
+    #header-contents
+    {
+        padding: 0px 35px 70px 35px;
+    }
+
+    /*** 
+    ****    SIDEBAR
+    ****/
+
+    #sidebar-fluid
+    {
+        width: 150px;
+    }
+
+    #sidebar-fixed
+    {
+        width: 150px;
+    }
+
+    /*** 
+    ****    BODY
+    ****/
+
+    #body-contents-container
+    {
+        margin: 70px 70px 70px 290px;
+    }
+
+    .proj-made-with-contain
+    {
+        flex-wrap: wrap;
+    }
+
+    .proj-made-with-contain p
+    {
+        margin-bottom: 5px;
+    }
+}
+
+@media only screen and (max-width: 700px)
+{
+    /*** 
+    ****    HEADER
+    ****/
+
+    #header
+    {
+        padding: 35px 50px 35px 35px;
+    }
+
+    #header-contents
+    {
+        padding: 0px 35px 70px 35px;
+    }
+
+    /*** 
+    ****    SIDEBAR
+    ****/
+
+    #sidebar-fluid
+    {
+        width: 100%;
+        height: auto;
+        z-index: 2;
+        background-color: white;
+    }
+
+    #sidebar-fixed
+    {
+        width: 100%;
+        height: auto;
+        z-index: 2;
+        background-color: white;
+    }
+
+    #sidebar-contents
+    {
+        padding-right: 35px;
+        padding-bottom: 0px;
+    }
+
+    /*** 
+    ****    BODY
+    ****/
+
+    #body-contents-container
+    {
+        margin: 140px 70px 70px 70px;
+        z-index: -2;
+    }
+
+    .proj-made-with-contain
+    {
+        flex-wrap: wrap;
+    }
+
+    .proj-made-with-contain p
+    {
+        margin-bottom: 5px;
+    }
+}
+
+@media only screen and (max-width: 400px)
+{
+    html, body
+    {
+        font-size: 1em;
+    }
+
+    /*** 
+    ****    HEADER
+    ****/
+
+    #header-contents
+    {
+        padding: 0px 35px 35px 35px;
+    }
+
+    /*** 
+    ****    BODY
+    ****/
+
+    #body-contents-container
+    {
+        margin: 140px 35px 35px 35px;
+        z-index: -2;
+    }
+}
