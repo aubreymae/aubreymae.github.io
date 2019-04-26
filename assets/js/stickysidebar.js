@@ -6,7 +6,7 @@
 var xPos, yPos;
 var newMarginTop;
 
-$(window).load(function()
+$(window).on('load', (function()
 {
     xPos = 700; // at 700 is mobile view so sidebar disappears
     yPos = $('#header').innerHeight();
