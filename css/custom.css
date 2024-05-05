@@ -1,0 +1,57 @@
+body {
+    background-image: url("../images/gradient-bg.png");
+    background-color: #112117;
+    background-attachment: fixed;
+    font-family: "Inter";
+    font-weight: 200;
+}
+
+div {
+    color: #9CB1A4;
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 32px;
+    font-family: "Roboto Serif";
+    font-weight: 500;
+    color: #44898D;
+}
+
+b {
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+}
+
+.page-title {
+    font-size: 38px;
+    font-family: "Roboto Serif";
+    font-size: 48px;
+    font-weight: 500;
+    color: #44898D;
+}
+
+/* The sidebar menu */
+.sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 300px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    margin-top: 100px;
+    text-align: right;
+    font-size: 24px;
+  }
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    color: #44898D;
+    display: block;
+  }
