@@ -18,12 +18,22 @@ h3 {
     color: #44898D;
 }
 
+p {
+    font-size: 30px;
+}
+
 b {
     font-weight: 600;
 }
 
 a {
     text-decoration: none;
+}
+
+.container {
+    overflow-x: hidden; 
+    margin-top: 150px; 
+    margin-bottom: 150px
 }
 
 .page-title {
@@ -46,7 +56,11 @@ a {
     margin-top: 100px;
     text-align: right;
     font-size: 24px;
-  }
+}
+
+.footnotes {
+    font-size: medium;
+}
 
 /* The navigation menu links */
 .sidenav a {
@@ -54,4 +68,23 @@ a {
     text-decoration: none;
     color: #44898D;
     display: block;
-  }
+}
+
+/* Mobile View */
+@media only screen and (max-width: 900px) {
+    h3 {
+        font-size: 24px;
+    }
+
+    p, b, a, i {
+        font-size: 22px;
+    }
+
+    .container {
+        margin-top: 50px;
+    }
+
+    .page-title {
+        font-size: 24px;
+    }
+}
