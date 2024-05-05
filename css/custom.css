@@ -1,7 +1,7 @@
 body {
-    background-image: url("../images/gradient-bg.png");
+    background-image: linear-gradient(to left top, #132233, #112117);
     background-color: #112117;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     font-family: "Inter";
     font-weight: 200;
 }
