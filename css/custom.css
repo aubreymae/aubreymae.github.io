@@ -8,7 +8,6 @@ body {
 
 div {
     color: #9CB1A4;
-    font-size: 24px;
 }
 
 h3 {
@@ -18,11 +17,12 @@ h3 {
     color: #44898D;
 }
 
-p {
+p, u, a {
     font-size: 30px;
 }
 
 b {
+    font-size: 30px;
     font-weight: 600;
 }
 
@@ -86,5 +86,14 @@ a {
 
     .page-title {
         font-size: 24px;
+    }
+}
+
+
+/* Mobile View */
+@media only screen and (max-width: 550px) {
+    .education-dates {
+        border-bottom: 1px solid;
+        padding-bottom: 3px;
     }
 }
