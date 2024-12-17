@@ -1,0 +1,339 @@
+/* Import Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&family=Ysabeau:ital,wght@0,1..1000;1,1..1000&display=swap');
+
+.young-serif-regular {
+    font-family: "Young Serif", serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+
+/* <uniquifier>: Use a unique and descriptive class name
+/ <weight>: Use a value from 1 to 1000 */
+
+.ysabeau-regular {
+    font-family: "Ysabeau", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 1;
+    font-style: normal;
+}
+
+
+/* General Reset */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    font-family: 'Ysabeau', sans-serif;
+    color: #e4e4e4;
+    background-color: #121212;
+    line-height: 1.6;
+    margin: 5rem;
+    margin-left: 15rem;
+    margin-right: 15rem;
+}
+
+h1, h2, h3, h4, h5 {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #aaa;
+}
+
+a:hover {
+    text-decoration-line: none;
+    color: #e4e4e4;
+    transition: all 1s;
+}
+
+/* Header */
+header {
+    text-align: left;
+    padding: 0;
+    margin-bottom: 6rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+    font-family: 'Young Serif', serif;
+}
+
+header span {
+    display: block;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+}
+
+header p {
+    font-size: 1.5rem;
+    color: #aaa;
+}
+
+/* Album Section */
+#albums {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.album {
+    display: flex;
+    gap: 1rem;
+}
+
+.album img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.album-header {
+    display: flex;
+}
+
+.album-info {
+    flex: 1;
+}
+
+.album-info a {
+    text-decoration: none;
+    color: #1db954;
+    font-weight: bold;
+}
+
+.album-info a:hover {
+    text-decoration: underline;
+}
+
+.album-title {
+    font-size: 1.8rem;
+    color: #fff;
+    font-family: 'Young Serif', serif;
+    margin-right: 0.8rem;
+}
+
+.artist-name {
+    font-size: 1.5rem;
+    color: #fff;
+    font-family: 'Ysabeau', sans-serif;
+}
+
+.album-year {
+    font-size: 1.5rem;
+    color: #fff;
+    font-family: 'Young Serif', serif;
+    margin-left: auto;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem;
+    font-size: 1rem;
+    color: #aaa;
+    background-color: #121212;
+    margin-top: 6rem;
+}
+
+footer a {
+    color: #1db954;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries for responsiveness */
+/* For Tablet and Mobile devices */
+@media (max-width: 1300px) {
+    /* General Layout */
+    body {
+        margin: 2rem;
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+
+    /* Header */
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header span {
+        font-size: 2.5rem;
+    }
+
+    header p {
+        font-size: 1.2rem;
+    }
+
+    /* Album Section */
+    #albums {
+        gap: 3rem;
+    }
+
+    .album {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .album-header {
+        display: block;
+    }
+
+    .album img {
+        width: 300px;
+        height: 300px;
+        
+    }
+
+    .album-info {
+        text-align: center;
+    }
+
+    .album-title {
+        font-size: 1.5rem;
+    }
+
+    .artist-name {
+        font-size: 1.2rem;
+    }
+
+    .album-year {
+        font-size: 1.2rem;
+    }
+}
+
+/* For Mobile devices */
+@media (max-width: 768px) {
+    /* General Layout */
+    body {
+        margin: 1rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    /* Header */
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    header span {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1.1rem;
+    }
+
+    /* Album Section */
+    #albums {
+        gap: 2rem;
+    }
+
+    .album {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .album img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .album-info {
+        text-align: center;
+    }
+
+    .album-title {
+        font-size: 1.3rem;
+    }
+
+    .artist-name {
+        font-size: 1rem;
+    }
+
+    .album-year {
+        font-size: 1rem;
+    }
+    
+    /* Footer */
+    footer p {
+        text-align: center;
+        padding: 2rem;
+        font-size: 1rem;
+    }
+}
+
+/* For Small Mobile devices */
+@media (max-width: 480px) {
+    /* General Layout */
+    body {
+        margin: 0.5rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    /* Header */
+    header h1 {
+        font-size: 1.6rem;
+    }
+
+    header span {
+        font-size: 1.8rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    /* Album Section */
+    #albums {
+        gap: 1.5rem;
+    }
+
+    .album {
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: center;
+    }
+
+    .album img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .album-info {
+        text-align: center;
+    }
+
+    .album-title {
+        font-size: 1.1rem;
+    }
+
+    .artist-name {
+        font-size: 0.9rem;
+    }
+
+    .album-year {
+        font-size: 0.9rem;
+    }
+
+    /* Footer */
+    footer p {
+        text-align: center;
+        padding: 2rem;
+        font-size: 1rem;
+    }
+}
